@@ -27,16 +27,20 @@ public class ClientThread extends Thread {
     HashMap<String,User> users;
     ArrayList<Worker> workers;
     ArrayList<Restaurant> myRsts;
-    HashMap<Integer, OrderObj> hashOrders;
+    ArrayList<OrderObj> myOrders;
+    ArrayList<Worker> activeWorkers;
 
-    public ClientThread(Socket clientSocket,HashMap<String,User> users, ArrayList<Worker> workers,ArrayList<Restaurant> myRsts,HashMap<Integer, OrderObj> hashOrders ) {
+    public ClientThread(Socket clientSocket, HashMap<String,User> users,
+                        ArrayList<Worker> workers, ArrayList<Restaurant> myRsts,
+                        ArrayList<Worker> activeWorkers ,ArrayList<OrderObj> myOrders) {
         this.clientSocket = clientSocket;
         inputStream = null;
         outputStream = null;
         this.users = users;
         this.workers = workers;
         this.myRsts = myRsts;
-        this.hashOrders = hashOrders;
+        this.myOrders = myOrders;
+        this.activeWorkers = activeWorkers;
     }
 
     @Override

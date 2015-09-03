@@ -9,20 +9,19 @@ import java.util.HashMap;
 import java.util.Set;
 
 public class Main {
-    public HashMap<String,User> users ;
-    ArrayList<OrderObj> myOrders;
-    HashMap<Integer, OrderObj> hashOrders;
-    ArrayList<Worker> workers,activeWorkers;
-    ArrayList<Restaurant> myRsts;
+
+
     public static final int NUMBER_OF_CLIENTS = 1000;
     public static int counter=0;
     public static final int PORT = 3000;
     private static boolean go = true;
+
     public static void main(String[] args) {
         HashMap<String,User> users = new HashMap<String,User>();
-        HashMap<Integer, OrderObj> hashOrders = new HashMap<Integer, OrderObj>();
         ArrayList<Worker> workers = new ArrayList<Worker>();
         ArrayList<Restaurant> myRsts = new ArrayList<Restaurant>();
+        ArrayList<OrderObj> myOrders = new ArrayList<OrderObj>();
+        ArrayList<Worker> activeWorkers = new ArrayList<Worker>();
         Restaurant domino = new Restaurant("vico","123","domino");
         myRsts.add(domino);
         User dan = new User("dan","12345", 1);
@@ -36,16 +35,6 @@ public class Main {
         workers.add(new Worker("Elad", "Lavi", "123"));
         workers.add(new Worker("Omer", "Cohen", "123"));
         workers.add(new Worker("Lev", "Levi", "123"));
-        OrderObj newOrder = new OrderObj("domino", "aaaaaa", "2",15,"zona",2);
-        OrderObj newOrder2 = new OrderObj("domino", "aaaaaa", "2",15,"zona",2);
-        OrderObj newOrder3 = new OrderObj("domino", "aaaaaa", "2",15,"zona",2);
-        OrderObj newOrder4 = new OrderObj("domino", "aaaaaa", "2",15,"zona",2);
-        hashOrders.put(2345, newOrder);
-        hashOrders.put(234, newOrder2);
-        hashOrders.put(235, newOrder3);
-        hashOrders.put(245, newOrder4);
-        Set<Integer> keys = hashOrders.keySet();
-        System.out.println(keys);
         ServerSocket serverSocket = null;
         try {
             serverSocket = new ServerSocket(PORT);
@@ -54,7 +43,7 @@ public class Main {
                 Socket clientSocket = serverSocket.accept();
                 System.out.println("client connected to Server");
                 if(counter< NUMBER_OF_CLIENTS) {
-                    ClientThread clientThread = new ClientThread(clientSocket, users, workers,myRsts, hashOrders);
+                    ClientThread clientThread = new ClientThread(clientSocket, users, workers, myRsts, activeWorkers, myOrders);
                     clientThread.start();
                     counter++;
                 }
