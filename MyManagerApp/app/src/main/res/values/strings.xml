@@ -3,7 +3,6 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="log_out">Log Out</string>
     <string name="title_activity_manager">ManagerActivity</string>
     <string name="title_activity_create_worker">CreateWorker</string>
     <string name="title_activity_workers_list">WorkersList</string>
@@ -31,6 +30,12 @@
     <string name="show_info">Show Info</string>
     <string name="show_workers_order">Show Orders</string>
     <string name="order_time_to_pick_up">Pick Up</string>
+    <string name="log_out">log out</string>
+    <string name="delete_worker">Delete Worker</string>
+    <string name="delete_worker_query">Are you sure you want to delete this worker?</string>
+    <string name="add_new_restaurant">Add New Restaurant</string>
+    <string name="delete_restaurant">Delete Restaurant</string>
+    <string name="restaurant_name">Restaurant Name:</string>
     <string-array name="array_workers">
         <item>Gil</item>
         <item>Arik</item>

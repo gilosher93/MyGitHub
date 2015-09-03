@@ -10,27 +10,28 @@
         android:layout_height="wrap_content">
 
         <TableRow>
-
             <TextView
                 android:layout_width="match_parent"
-                android:text="User Name:" />
-
+                android:text="@string/restaurant_name" />
             <EditText
-                android:id="@+id/txtUserName"
+                android:id="@+id/txtRestaurantName"
                 android:layout_width="300dp" />
         </TableRow>
 
         <TableRow>
-
-            <TextView android:text="User Password:" />
-
-            <EditText android:id="@+id/txtPassword" />
+            <TextView android:text="User Name:" />
+            <EditText android:id="@+id/txtUserName" />
         </TableRow>
 
         <TableRow>
-            <TextView  />
+            <TextView android:text="Password:" />
+            <EditText android:id="@+id/txtPassword"
+                android:inputType="number"/>
+        </TableRow>
 
+        <TableRow>
             <Button
+                android:layout_span="2"
                 android:id="@+id/btnCreateRst"
                 android:text="Create Resturant" />
         </TableRow>

@@ -39,7 +39,7 @@
         <TableRow>
 
             <TextView android:text="@string/password"
-            android:textSize="20dp"/>
+                android:textSize="20dp"/>
 
             <EditText
                 android:id="@+id/txtPassword"

@@ -7,7 +7,7 @@
     android:paddingLeft="25dp"
     android:paddingRight="25dp"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.gil.mymanagerapp.RstManageActivity">
+    tools:context="com.example.gil.mymanagerapp.Activities.RstManageActivity">
     <TextView
         android:id="@+id/txtRstManage"
         android:layout_width="wrap_content"
@@ -22,17 +22,5 @@
         android:layout_height="500dp"
         android:layout_centerVertical="true"
         android:layout_alignStart="@+id/txtRstManage" />
-
-    <Button
-        android:id="@+id/btnAddResturant"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:background="#ff959694"
-        android:drawableTop="@drawable/plus"
-        android:enabled="true"
-        android:onClick="btnAddResturant"
-        android:text="Add New Resturant" />
 
 </RelativeLayout>

@@ -5,8 +5,8 @@
     android:layout_gravity="center"
     xmlns:android="http://schemas.android.com/apk/res/android" >
     <Button
-        android:id="@+id/btnDeleteWorker"
-        android:text="@string/delete_worker"
+        android:id="@+id/btnRemoveFromShift"
+        android:text="@string/remove_from_shift"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="?android:attr/buttonBarButtonStyle"

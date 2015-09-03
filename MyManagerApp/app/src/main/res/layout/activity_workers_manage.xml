@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.gil.mymanagerapp.WorkersManageActivity">
+    tools:context="com.example.gil.mymanagerapp.Activities.WorkersManageActivity">
 
     <TextView
         android:id="@+id/txtWorkersList"
@@ -26,14 +26,6 @@
         android:layout_below="@+id/txtWorkersList"
         android:layout_alignParentEnd="true" />
 
-
-    <Button
-        android:text="add to Shift"
-        android:onClick="SendActiveWorkers"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/lstWorkeresList"
-        android:layout_alignStart="@+id/lstWorkeresList" />
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
