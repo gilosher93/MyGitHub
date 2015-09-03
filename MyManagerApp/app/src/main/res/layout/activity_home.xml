@@ -1,0 +1,78 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffb9b5b5"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        >
+
+        <TableRow>
+
+            <TextView
+                android:width="200dp"
+                android:text="@string/welcome"
+                android:textSize="40dp"
+                android:layout_span="2"
+                android:paddingBottom="30dp"
+                android:paddingTop="50dp"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:width="120dp"
+                android:text="@string/user_name"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/txtUserName"
+                android:width="200dp"
+                android:textSize="20dp"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView android:text="@string/password"
+            android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/txtPassword"
+                android:inputType="numberPassword"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView />
+
+            <CheckBox
+                android:id="@+id/chkRememberPassword"
+                android:text="@string/remember_password" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:onClick="btnLogin"
+                android:text="@string/sing_in"
+                android:textSize="20dp"
+                android:background="#ff959694" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_span="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtStatus"
+                android:textSize="20sp"/>
+        </TableRow>
+
+    </TableLayout>
+</RelativeLayout>

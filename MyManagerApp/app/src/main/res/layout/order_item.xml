@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="820dp"
+        android:layout_height="30dp">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/txtOrderId"
+                android:layout_width="100dp"
+                android:text="@string/order_id"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/txtPickUpTime"
+                android:layout_width="100dp"
+                android:text="Pick Up"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtEnterTime"
+                android:layout_width="130dp"
+                android:text="@string/enter_time"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtBusiness"
+                android:layout_width="120dp"
+                android:text="@string/business"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtAdress"
+                android:layout_width="200dp"
+                android:text="@string/address"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spnMessenger"
+                android:layout_width="170dp"
+                android:text="@string/messenger"
+                android:textSize="20sp" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

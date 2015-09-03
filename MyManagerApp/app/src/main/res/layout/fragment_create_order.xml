@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="@string/resturant_name" />
+
+            <AutoCompleteTextView
+                android:id="@+id/txtRstName"
+                android:layout_width="300dp"
+                android:hint="Example: Pizza Domino"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView android:text="@string/street_address" />
+
+            <EditText android:id="@+id/txtAddressStr"
+                android:hint="Example: Savion"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView android:text="@string/street_number" />
+
+            <EditText android:id="@+id/txtAddressNum"
+                android:inputType="number"
+                />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView android:text="@string/pick_up_time" />
+
+            <EditText android:id="@+id/txtTimeToPickUp"
+                android:inputType="number"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView  />
+
+            <Button
+                android:id="@+id/btnCreateOrder"
+                android:text="@string/create_order" />
+        </TableRow>
+
+    </TableLayout>
+</RelativeLayout>

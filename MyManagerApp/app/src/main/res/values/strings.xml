@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">MyManagerApp</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="log_out">Log Out</string>
+    <string name="title_activity_manager">ManagerActivity</string>
+    <string name="title_activity_create_worker">CreateWorker</string>
+    <string name="title_activity_workers_list">WorkersList</string>
+    <string name="title_activity_orders_view">OrdersViewActivity</string>
+    <string name="title_activity_create_order">CreateOrderActivity</string>
+    <string name="title_activity_rst_manage">RstManageActivity</string>
+    <string name="welcome">Welcome To Delivery Manager</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="remember_password">Remember Password</string>
+    <string name="sing_in">sign In</string>
+    <string name="order_id">Order ID</string>
+    <string name="address">Address</string>
+    <string name="enter_time">Enter Time</string>
+    <string name="business">Business</string>
+    <string name="messenger">Messenger</string>
+    <string name="worker_list">Workers List</string>
+    <string name="manage_restaurants">Manage Restaurants</string>
+    <string name="create_order">Create Order</string>
+    <string name="resturant_name">Restaurant Name</string>
+    <string name="street_address">Street Address:</string>
+    <string name="street_number">Street Number:</string>
+    <string name="pick_up_time">Time To Pick Up(in Minutes):</string>
+    <string name="remove_from_shift">Remove From Shift</string>
+    <string name="show_info">Show Info</string>
+    <string name="show_workers_order">Show Orders</string>
+    <string name="order_time_to_pick_up">Pick Up</string>
+    <string-array name="array_workers">
+        <item>Gil</item>
+        <item>Arik</item>
+        <item>Siani</item>
+        <item>Benzi</item>
+    </string-array>
+</resources>
