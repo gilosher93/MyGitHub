@@ -29,7 +29,6 @@ public class ClientThread extends Thread {
     ArrayList<Restaurant> myRsts;
     ArrayList<OrderObj> myOrders;
     ArrayList<Worker> activeWorkers;
-    ArrayList<Worker> activeWorkers2;
 
     public ClientThread(Socket clientSocket, HashMap<String,User> users,
                         ArrayList<Worker> workers, ArrayList<Restaurant> myRsts,
